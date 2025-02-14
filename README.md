@@ -1,6 +1,4 @@
-Here’s an updated version of your `README.md` file with a **Docker Section** added. This section will guide users on how to build and run the project using Docker.
 
----
 
 # 🌦️ EcoWeather
 
