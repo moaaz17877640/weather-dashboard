@@ -1,3 +1,7 @@
+Here’s an updated version of your `README.md` file with a **Docker Section** added. This section will guide users on how to build and run the project using Docker.
+
+---
+
 # 🌦️ EcoWeather
 
 Welcome to EcoWeather, your go-to destination for accurate and reliable weather forecasts! 🌍
@@ -26,10 +30,47 @@ EcoWeather is built using modern web technologies including:
 
 To run EcoWeather locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/aviralmehrotra/eco-weather.git`
+1. Clone the repository: `git clone https://github.com/moaaz17877640/weather-dashboard.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 4. Open `http://localhost:3000` in your web browser.
+
+## 🐳 Docker Support
+
+You can also run EcoWeather using Docker. Follow these steps:
+
+### 1. Build the Docker Image
+Navigate to the project directory and build the Docker image:
+```bash
+docker build -t eco-weather .
+```
+
+### 2. Run the Docker Container
+Start the container using the following command:
+```bash
+docker run -it -p 3000:3000 eco-weather
+```
+
+- The app will be accessible at `http://localhost:3000`.
+
+### 3. Docker Compose (Optional)
+If you prefer using Docker Compose, create a `docker-compose.yml` file:
+```yaml
+version: '3.8'
+services:
+  eco-weather:
+    image: eco-weather
+    build: .
+    ports:
+      - "3000:3000"
+```
+
+Then, run the following command:
+```bash
+docker-compose up
+```
+
+---
 
 ## 🤝 Contributing
 
